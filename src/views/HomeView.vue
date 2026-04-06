@@ -24,7 +24,7 @@
               </div>
 
               <div class="button-section d-flex gap-4 justify-content-center justify-content-md-start">
-                <button class="btn-contact">{{ $t('hero.btnContact') }}</button>
+                <a href="#contact" @click.prevent="scrollTo('contact')" class="btn-contact">{{ $t('hero.btnContact') }}</a>
                 <a href="/LeeJunKhang-resume.pdf" download class="btn-download text-decoration-none">{{ $t('hero.btnDownload') }}</a>
               </div>
             </div>
@@ -130,11 +130,14 @@ export default {
 
       setTimeout(() => this.type(), this.deleting ? 45 : 90)
     },
-    scrollToContact() {
-      const el = document.getElementById('contact')
+    scrollTo(id) {
+      const el = document.getElementById(id)
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' })
       }
+    },
+    scrollToContact() {
+      this.scrollTo('contact')
     }
   }
 
@@ -195,6 +198,7 @@ section h2 {
 .btn-contact {
   background-color: var(--color-btn-contact);
   color: var(--color-text-btn-contact);
+  text-decoration: none;
 }
 
 .btn-download {
