@@ -79,16 +79,16 @@ export default {
           image: '/images/fyp-image.png',
           accentColor: 'linear-gradient(90deg, #2EFFA0, #06b6d4)'
         },
-        // {
-        //   title: 'Developer Portfolio',
-        //   badge: 'THIS SITE',
-        //   desc: 'This portfolio — built with Vue.js and Bootstrap, deployed on Vercel. Responsive SPA with smooth scroll sections and a contact form.',
-        //   stack: ['Vue.js', 'Bootstrap', 'Vite'],
-        //   demo: '#',
-        //   github: '#',
-        //   image: '',
-        //   accentColor: 'linear-gradient(90deg, #6366f1, #8b5cf6)'
-        // },
+        {
+          title: 'Weather App',
+          badge: 'PERSONAL PROJECT',
+          desc: 'Built a responsive weather application using Vue.js and Bootstrap, consuming the OpenWeatherMap REST API to display real-time weather data and 5-day forecasts. Implemented features including geolocation-based weather detection, Celsius/Fahrenheit toggle, and localStorage to persist the last searched city. Deployed the application on Vercel with environment variable configuration for API key security.',
+          stack: ['Vue.js', 'Bootstrap', 'Vite', 'OpenWeatherMap API'],
+          demo: 'https://leejk-weather-app.vercel.app/',
+          github: 'https://github.com/blaabala/leejk-weather-app',
+          image: '/images/weather-app.png',
+          accentColor: 'linear-gradient(90deg, #6366f1, #8b5cf6)'
+        },
       ]
     }
   }
